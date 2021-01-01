@@ -1,0 +1,93 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:'Poppins', sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('E:/Shivani_Varu_190423116010_mp1/images/p1.png');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('E:/Shivani_Varu_190423116010_mp1/images/dome.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('E:/Shivani_Varu_190423116010_mp1/images/india2.jpg');
+  min-height:400px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+
+.section-light{
+  background-color:#722f3bde;
+  color:rgba(235, 204, 212, 0.52);
+}
+.section-dark{
+  background-color:#554247;
+  color:#a88590;
+}
+
+.ptext{
+
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:30px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:rgba(14, 12, 17, 0.904);
+  color:white;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  
+  font-size: 20px;
+  font-family: cursive;
+  font-style: oblique;
+  background-color:rgba(82, 19, 39, 0);
+  color:rgba(253, 251, 253, 0.685);
+}
+.service-title {
+  font-family:'Times New Roman', Times, serif;
+  color: #F37b83;
+}
+.service-head {
+font-family:'Times New Roman', Times, serif;
+  color:#ffc5ddc5;
+}
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
